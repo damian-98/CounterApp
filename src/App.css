@@ -8,12 +8,14 @@ body {
 }
 
 #add {
+  cursor: pointer;
   margin-right: 20px;
   width: 10%;
   height: 60px;
 }
 
 #talk {
+  cursor: pointer;
   width: 10%;
   height: 60px;
 }
