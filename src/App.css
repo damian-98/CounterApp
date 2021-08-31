@@ -5,6 +5,7 @@ body {
 .App {
   margin-top: 380px;
   text-align: center;
+  justify-content: center;
 }
 
 #add {
@@ -14,8 +15,9 @@ body {
   height: 60px;
 }
 
-#talk {
+#subtract {
   cursor: pointer;
+  justify-content: center;
   width: 10%;
   height: 60px;
 }
