@@ -1,5 +1,10 @@
 import { useState, useEffect } from "react";
-import "./App.css";
+import Title from "./Title";
+import Wrapper from "./Wrapper";
+import AddButton from "./AddButton";
+import SubtractButton from "./SubtractButton";
+import AppColor from "./AppColor";
+import AppPostion from "./AppPostion";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,13 +18,18 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Count:{count}</h1>
-      <button onClick={add} id="add">
-        Add
-      </button>
-      <button onClick={subtract} id="subtract">
-        subtract
-      </button>
+      <AppColor />
+      <AppPostion>
+        <Wrapper>
+          <Title>Count:{count}</Title>
+          <AddButton onClick={add} id="add">
+            Add
+          </AddButton>
+          <SubtractButton onClick={subtract} id="subtract">
+            subtract
+          </SubtractButton>{" "}
+        </Wrapper>
+      </AppPostion>
     </div>
   );
 }
