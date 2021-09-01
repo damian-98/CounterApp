@@ -17,20 +17,18 @@ function App() {
   const subtract = () => setCount(count - 1);
 
   return (
-    <div className="App">
+    <AppPostion>
       <AppColor />
-      <AppPostion>
-        <Wrapper>
-          <Title>Count:{count}</Title>
-          <AddButton onClick={add} id="add">
-            Add
-          </AddButton>
-          <SubtractButton onClick={subtract} id="subtract">
-            subtract
-          </SubtractButton>{" "}
-        </Wrapper>
-      </AppPostion>
-    </div>
+      <Wrapper>
+        <Title>Count:{count}</Title>
+        <AddButton onClick={add} id="add">
+          Add
+        </AddButton>
+        <SubtractButton onClick={subtract} id="subtract">
+          subtract
+        </SubtractButton>{" "}
+      </Wrapper>{" "}
+    </AppPostion>
   );
 }
 
